@@ -48,4 +48,14 @@ And now run the app:
 flask run
 ```
 
+To run Unit tests, flasky.py has been modified, with a new function called `test`:
+Run unit test without reporting coverage. 
 
+```
+flask test --no-coverage
+```
+
+Run Unit test with coverage: 
+```
+flask test --coverage
+```

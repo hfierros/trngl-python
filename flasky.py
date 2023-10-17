@@ -26,7 +26,7 @@ def test(coverage=False):
     tests = unittest.TestLoader().discover('app/tests')
     unittest.TextTestRunner(verbosity=2).run(tests)
     
-    if cov:
+    if coverage:
         cov.stop()
         cov.save()
         print('Coverage Summary:')
